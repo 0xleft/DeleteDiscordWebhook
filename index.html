@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Adomas">
+    <meta name="keywords" content="discord, webhook, delete, checker">
+    <meta name="description" content="Discord webhook checker is a website that allows you to check if a discord webhook is valid and delete it.">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Discord Webhook checker</title>
+</head>
+<body>
+
+    <div id="notification" class="notification hide"></div>
+
+    <div class="content">
+        <div class="center">
+            <p>Enter a webhook link.</p>
+            <div>
+                <input type="text" name="webhook" id="input" placeholder="Webhook Link" required>
+                <button id="check" onclick="checkWebhook()">Check</button>
+                <button id="delete" onclick="deleteWebhook()">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="explanation">
+        <h1>Why?</h1>
+        <p>Sometimes a discord webhook on a scam website is exposed, but to delete it you need to have some technical background. This website makes it easy to delete it :)</p>
+    </div>
+
+    <footer style="text-align: center">
+        <p>This website is not affiliated with Discord.</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
